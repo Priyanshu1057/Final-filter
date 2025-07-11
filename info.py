@@ -13,8 +13,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '6152357'))
-API_HASH = environ.get('API_HASH', 'c33f99bdf439168fcc7b298f5f06b5e3')
+API_ID = int(environ.get('API_ID', '23685822'))
+API_HASH = environ.get('API_HASH', 'ff0572e13ff2f63a50f6dc707e0c4c9f')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -27,12 +27,12 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1710896723').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001546863630 -1001230197447 -1001582228236 -1001606601484 -1001409905076 -1001169954007 -1001749696923 -1001809652945 -1001877117508 -1001767342018').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6725874739').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002601777610').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1710896723').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1001531365423')
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '0').split()]
+auth_channel = environ.get('AUTH_CHANNEL', '-1001648037641')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'a4828297cfbaccbdaadee24845f41db05600660a')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
@@ -56,13 +56,13 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8000")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/R3_group1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/R_Bots_Updates')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviesearchgroupmovixnest')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MovixNest')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HowToUseBot101')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001891893870'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'R_3Group')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002789122645'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+oTQk9QGQ-YRmZWI1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
